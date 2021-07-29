@@ -12,34 +12,40 @@
 The code should run with no issues using Python version 3.0 or older.
 The following libraries were used to complete the project: sklearn, tensorflow and keras, numpy, glob, random, cv2, matplotlib, tqdm, PIL.
 
+Please note that the relevant bottleneck features of VGG16 could not be uploaded due to file size restrictions.
+
 
 ## Project Motivation<a name="motivation"></a>
 
-As part of the Udacity Data Scientist Nanodegree, students are required to complete a Capstone project. I chose to complete the 
+As part of the Udacity Data Scientist Nanodegree, students are required to complete a Capstone project. I chose to complete the project on classifying dog breeds to fresh up my knowledge on CNNs. 
 
-I explored the following questions:
+The notebook is structured as follows:
 
-1. Are developers with a higher salary more satisfied?
+1. Testing dog and human face detectors
 
-2. To which extent do the working hours influence job satisfaction?
+2. Creating a CNN from scratch to identify dog breeds
 
-3. Do experienced programmers tend to be more satisfied than their less experienced colleagues?
+3. Using transfer learning to dramatically improve the CNN used for classifying dog breeds
 
-In addition to these questions, which are also addressed in the related Medium post under (...), I explored whether using these three variables, one could build a machine learning model that enables predicting job satisfaction of developers. To this end, I tested a logistic regression, a decision tree, and a random forest model.
+4. Creating an algorithm that automatically detects humans or dogs in images and determines the (related) dog breed.
+
 
 
 ## File Descriptions <a name="files"></a>
 
-The Jupyter notebook analyzing_job_satisfaction.ipynb provides all the code that was used for the analysis.
+The Jupyter notebook dog_app.ipynb provides all the code that was used for the analysis.
+The images folder contains some images that were used as examples for the classification task.
+The saved_models folder contains the relevant models that were trained and that can be loaded to classify images.
+The bottleneck_features were used for the transfer learning. As described above, please note that the relevant bottleneck features of VGG16 could not be uploaded due to file size restrictions.
 
 ## Results<a name="results"></a>
 
-The main findings of the code can be found at the post available [here](https://benewalter.medium.com/how-to-become-a-satisfied-developer-lessons-from-the-2020-stack-overflow-developer-survey-7faf3b6c63ab).
-The results indicate that satisfied developers represent a heterogenous group consisting of individuals working both short and long hours and either being decades long experts in their field or having started only some years ago. Only a higher salary seems to be related with job satisfaction. Furthermore, the exploration revealed that the three examined variables do not enable to build a good machine learning model to predict job satisfaction.
+The notebook exemplifies that with the help of libraries like KERAS, building a working CNN is really easy. However, while building such a CNN from scratch is relatively straight forward, the performance of such a CNN can often be rather mediocre. This can often result from missing training data, like it was the case for this project.
+In these instances, transfer learning can be extremely valuable to improve the performance of the CNN dramatically. This was exemplified by this notebook.
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
-I want to give credit to Stack Overflow for the data. Also, I relied on numerous posts on Stack Overflow when stuck with any question. 
-I also want to thank Josh and the rest of the Udacity team for providing this code, the very useful instructions and guidelines for completing this project. 
+I want to give credit to KERAS for providing excellent guidelines on how to easily create a CNN. Also, I relied on numerous posts on Stack Overflow when stuck with any question. 
+I also want to thank the Udacity team for providing this code, the very useful instructions and guidelines for completing this project. 
 Otherwise, feel free to use the code here as you would like! 
 
