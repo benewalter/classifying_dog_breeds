@@ -42,10 +42,11 @@ The bottleneck_features were used for the transfer learning. As described above,
 
 The notebook exemplifies that with the help of libraries like KERAS, building a working CNN is really easy. However, while building such a CNN from scratch is relatively straight forward, the performance of such a CNN can often be rather mediocre. This can often result from missing training data, like it was the case for this project.
 In these instances, transfer learning can be extremely valuable to improve the performance of the CNN dramatically. This was exemplified by this notebook.
+The results are also summarized in a blog post on Medium (https://benewalter.medium.com/classifying-dog-breeds-exemplifying-the-value-of-keras-and-transfer-learning-5f5457b2fe32).
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
-I want to give credit to KERAS for providing excellent guidelines on how to easily create a CNN. Also, I relied on numerous posts on Stack Overflow when stuck with any question. 
+I want to give credit to Keras for providing excellent guidelines on how to easily create a CNN. Also, I relied on numerous posts on Stack Overflow when stuck with any question. 
 I also want to thank the Udacity team for providing this code, the very useful instructions and guidelines for completing this project. 
 Otherwise, feel free to use the code here as you would like! 
 
